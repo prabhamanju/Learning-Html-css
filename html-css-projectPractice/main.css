@@ -1,0 +1,165 @@
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+
+/***** styling Navbar ****/
+nav {
+    width: 100%;
+    margin: 0;
+    
+}
+nav ul {
+    background-color: #eeeeee;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #eeeeee;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    contain: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+div.leftside-col {
+    margin-left: 20%;
+}
+
+div.rightside-col {
+    margin-left: 10%;
+}
+/*h1.larger{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}*/
+
+/*************custom style**********************/
+
+#secssion-1-gradient {
+    background: linear-gradient(rgb(0, 226, 255), rgb(0, 174, 255));
+}
+
+
+footer.main-footer {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.main-footer h1 {
+    color: #eeeeee;
+    font-size: 15px;
+}
+
+footer.main-footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer.main-footer ul li{
+    color: #eeeeee;
+    font-size: 12;
+    line-height: 1.2;
+}
+
+/**************mobile style*********************/
+
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .col-6{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.leftside-col, 
+    div.rightside-col {
+        margin: 15%;
+    }
+}

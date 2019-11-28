@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            My HTML-CSS website
+        </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="#signin">Sign In</a></li>
+                <li class="dropdownIcon"><a onclick=dropdownMenu() href="javascript:void(0)">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="secssion-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col">
+                        <h1 class="larger">Hello, </h1>
+                        <h2 class="larger">My name is Manju</h2>
+                        <p>I am a great developer</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="rightside-col">
+                            <iframe width="300" height="215" src="https://www.youtube.com/embed/MXkgYf1pnOA" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe> 
+                            <!--<iframe src="https://www.youtube.com/embed/MXkgYf1pnOA" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>-->
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <footer class="main-footer">
+            <div class="row">
+                <div class="col-3">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                </div>
+                <div class="col-3">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                </div>
+                <div class="col-3">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script>
+            function dropdownMenu(){
+                let x = document.getElementById("dropdownClick");
+                if(x.className === "topnav"){
+                    x.className += " responsive"; /*change topnav to topnav responsive*/arguments
+                }else{
+                    x.className = "topnav";
+                }
+
+            }
+        </script>
+    </body>
+</html>
