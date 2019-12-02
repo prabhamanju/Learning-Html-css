@@ -95,6 +95,7 @@ div.box {
     text-align: center;
     margin: 20px;
     padding: 26px 20px 30px 20px;
+    border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
@@ -185,7 +186,7 @@ footer.main-footer ul li{
         text-align: left;
     }
 
-    .col-6{
+    .col-6, .col-4 {
         width: 100%;
         margin: 0;
     }
