@@ -91,6 +91,18 @@ ul.topnav li.dropdownIcon{
     background: -moz-linear-gradient(#076dff, #65a5ff)
 }
 
+div.box {
+    text-align: center;
+    margin: 20px;
+    padding: 26px 20px 30px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
 div.leftside-col {
     margin-left: 15%;
     text-align: justify;
@@ -106,6 +118,11 @@ h1.larger {
     font-size: 40px;
     margin: 0;
     line-height: 20px;
+}
+
+h1.section2header {
+    font-size: 35px;
+    text-align: center;
 }
 
 input[type="text"] {
