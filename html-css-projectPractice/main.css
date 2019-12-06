@@ -35,6 +35,7 @@ ul.topnav li a {
     min-height: 16px;
     text-align: center;
     padding: 14px;
+    text-transform: uppercase;
     color: #666;
 }
 
@@ -51,7 +52,7 @@ ul.topnav li.dropdownIcon{
     width: 100%;
     margin: auto;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 4%; 
 }
 
 .row {
@@ -79,27 +80,76 @@ ul.topnav li.dropdownIcon{
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+
+/*************custom style**********************/
+
+#secssion-1-gradient {
+    background: #076dff; /* for browser that don't support Gradient*/
+    background: linear-gradient(#076dff, #65a5ff);
+    background: -webkit-linear-gradient(#076dff, #65a5ff);
+    background: -o-linear-gradient(#076dff, #65a5ff);
+    background: -moz-linear-gradient(#076dff, #65a5ff)
+}
+
+div.box {
+    text-align: center;
+    margin: 20px;
+    padding: 26px 20px 30px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0069ff;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+}
+
+button.learnmore {
+    display: block;
+    margin: auto;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
 div.leftside-col {
-    margin-left: 20%;
+    margin-left: 15%;
+    text-align: justify;
+    
 }
 
 div.rightside-col {
     margin-left: 10%;
 }
-/*h1.larger{
+
+h1.larger {
     color: #fff;
-    font-size: 56px;
+    font-size: 40px;
     margin: 0;
-    line-height: 70px;
-}*/
-
-/*************custom style**********************/
-
-#secssion-1-gradient {
-    background: linear-gradient(rgb(0, 226, 255), rgb(0, 174, 255));
+    line-height: 20px;
 }
 
+h1.section2header {
+    font-size: 35px;
+    text-align: center;
+}
 
+input[type="text"] {
+    font-size: 15px;
+    width: 400px;
+    min-width: 100px;
+    padding: 3px;
+   
+}
 footer.main-footer {
     background-color: #666;
     padding-left: 10%;
@@ -153,13 +203,24 @@ footer.main-footer ul li{
         text-align: left;
     }
 
-    .col-6{
+    .col-6, .col-4 {
         width: 100%;
         margin: 0;
     }
 
     div.leftside-col, 
     div.rightside-col {
-        margin: 15%;
+        margin: 15px;
+    }
+
+    input[type="text"] {
+        width: 350px;
+    }
+
+    .vidoecontainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
     }
 }
